@@ -1,9 +1,13 @@
 {
+  "version": 2,
   "functions": {
-    "api/*.js": {
+    "api/clone.js": {
       "runtime": "nodejs18.x",
       "memory": 1024,
       "maxDuration": 60
     }
-  }
+  },
+  "routes": [
+    { "src": "/share", "dest": "/share.html" }
+  ]
 }
